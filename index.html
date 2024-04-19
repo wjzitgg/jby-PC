@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- 将http的不安全请求升级为https -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /> -->
+    <title>建必优工程生产管理系统</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_2163718_kkqmuf7f08a.css" />
+    <!-- 引入百度地图 -->
+    <!-- <script type="text/javascript" src="https://api.map.baidu.com/getscript?v=2.0&ak=x9esfxsfZW0PKLRVsM9kCM1whAOxBdKw"></script> -->
+    <!-- 引入腾讯地图 -->
+    <!-- <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=TMVBZ-L26WU-5K2VR-4KQNM-X4K7O-ASB4R"></script> -->
+    <!-- 引入腾讯地图 -->
+    <!-- <script src="https://webapi.amap.com/loader.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=82d94d6a59eceae72dce5f3802c4fc0c&plugin=AMap.Geocoder"></script>  -->
+    <script type="text/javascript">
+      
+      window._AMapSecurityConfig = {
+        securityJsCode: '7245d5c1ac4d619cc295d0ec4c402b48',
+        serviceHost:localStorage.getItem("httpurl") +'/_AMapService',
+      }
+    </script>
+    <style>
+      @media screen and (max-width: 1300px) {
+        body {
+          width: 1300px !important;
+        }
+        #app {
+          width: 1300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
